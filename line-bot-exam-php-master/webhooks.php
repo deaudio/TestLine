@@ -32,36 +32,8 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-			$data1 = ['replyToken' => $replyToken,
-				'{
-  				"type": "template",
-				"altText": "this is a buttons template",
-			 	"template": {
-				"type": "buttons",
-				"actions": [
-			      {
-				"type": "postback",
-				"label": "Call",
-				"text": "02-034-4040",
-				"data": "Call"
-			      },
-			      {
-				"type": "uri",
-				"label": "WebSite",
-				"uri": "https://www.facebook.com/OOOIRAMEN/"
-			      },
-			      {
-				"type": "uri",
-				"label": "WebApp",
-				"uri": "line://app/101"
-			      }
-			    	],
-			    "thumbnailImageUrl": "SPECIFY_YOUR_IMAGE_URL",
-			    "title": "Title",
-			    "text": "Text"
-				  }
-				}'];
-			$post = json_encode($data1);
+			
+			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
