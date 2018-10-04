@@ -32,8 +32,10 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
+			$url = 'a.json'; // path to your JSON file
+			$data1 = file_get_contents($url); // put the contents of the file into a variable
 			
-			$post = json_encode($data);
+			$post = json_encode($data1);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
