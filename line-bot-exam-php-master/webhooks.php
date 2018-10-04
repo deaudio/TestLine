@@ -60,7 +60,7 @@ if (!is_null($events['events'])) {
 			    "text": "Text"
 				  }
 				}'];
-			$post = json_encode($data);
+			$post = json_encode($data1);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
 			$ch = curl_init($url);
