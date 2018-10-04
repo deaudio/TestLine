@@ -29,9 +29,10 @@ if (!is_null($events['events'])) {
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$url1 = 'a.json';
+			$data1 = file_get_contents($url1);
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$url1],
+				'messages' => [$data1],
 			];
 			//$url1 = 'a.json'; // path to your JSON file
 			//$data1 = file_get_contents($url); // put the contents of the file into a variable
