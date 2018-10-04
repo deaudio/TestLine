@@ -32,7 +32,8 @@ if (!is_null($events['events'])) {
 				'replyToken' => $replyToken,
 				'messages' => [$messages],
 			];
-			$data1 = ['{
+			$data1 = ['replyToken' => $replyToken,
+				'{
   				"type": "template",
 				"altText": "this is a buttons template",
 			 	"template": {
