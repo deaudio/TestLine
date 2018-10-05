@@ -20,7 +20,7 @@ $body = file_get_contents('php://input');
 
 try  { 
     // Verify the content from Body and $ signature and get event if you succeed 
-    $  event =  $ bot -> parseEventRequest ( $ body ,  $ signature );
+    $event =  $bot -> parseEventRequest ( $body ,  $signature );
 
     foreach ($events as $event) {
        if ($event instanceof TextMessage) {
