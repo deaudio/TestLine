@@ -49,10 +49,10 @@ function replyTaberguList($bot, $eventData, $lat, $lng) {
    $taberoguList = getTaberoguData($category,$lat,$lng);
    if (count($taberoguList) === 0) {
      $bot->replyText($eventData->getReplyToken(),'The store could not be found. ' ); 
-   }  The else  { 
-     $ LineService  =  new new  LineMessageService ( LINE_MESSAGING_API_CHANNEL_TOKEN ); 
-     $ res  =  $ LineService -> PostFlexMessage ( $ eventData -> GetReplyToken (),  $ TaberoguList ); 
-     $ bot -> ReplyText ( $ event -> GetReplyToken (), $ res ); 
+   }  else  { 
+     $LineService  =  new LineMessageService ( LINE_MESSAGING_API_CHANNEL_TOKEN ); 
+     $res  =  $LineService -> PostFlexMessage ( $eventData -> GetReplyToken (),  $TaberoguList ); 
+     $bot -> ReplyText ( $event -> GetReplyToken (), $res ); 
    } 
 }
 
