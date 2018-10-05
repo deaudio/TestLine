@@ -1,6 +1,5 @@
 <?php
-require "vendor/autoload.php";
-require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
+require('vendor/autoload.php');
 
 define("LINE_MESSAGING_API_CHANNEL_SECRET", 'f0c63c7170eab4b9f8027cf92c515a81');
 define("LINE_MESSAGING_API_CHANNEL_TOKEN", 'Gppzd6Y3lg6XHyA4wBZ0zWdyWmlqeDYBCxayHBYC8r8GnLXUSy2vJ9kN/NEdcdWqdoVJiZlgR3is39pmvR7OvjFEwGpMbheQ8cifL+ETAhZaz6DrrbVV1pT15YKjCXfhH0JI7sdaTS44/6vVtp1yLAdB04t89/1O/w1cDnyilFU=');
