@@ -1,5 +1,5 @@
 <?php
-require "vendor/autoload.php";
+require('vendor/autoload.php');
 require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
 
 define("LINE_MESSAGING_API_CHANNEL_SECRET", 'f0c63c7170eab4b9f8027cf92c515a81');
